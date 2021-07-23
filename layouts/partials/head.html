@@ -17,7 +17,7 @@
 <!--<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Page.Params.HTMLtitle }}{{ . }} {{ end }}{{ end }}</title>-->
 <title>{{ if .IsHome }}{{ .Page.Params.HTMLtitle  }}{{ else }}{{ with .Page.Params.SEOtitle }}{{ . }}{{ end }}{{ end }}</title>
 <meta name="description" content="{{ .Page.Params.Content }}">
-<meta name="”og:image" content="{{ .Site.Params.social_logo_path | absURL  }}">
+<meta name="”og:image" content="{{ .Site.Params.social_logo_path | absURL }}">
 <meta property="og:image" content="{{ .Site.Params.social_logo_path | absURL }}">
 
 {{- template "_internal/opengraph.html" . -}}

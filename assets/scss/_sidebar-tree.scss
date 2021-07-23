@@ -91,7 +91,7 @@
 
 .td-sidebar {
     @include media-breakpoint-up(md) {
-        padding-top: 4rem;
+        padding-top: 8rem; //edited by @anthony for top banner - change back to 4 without top banner
         background-color: $td-sidebar-bg-color;
         padding-right: 1rem;
         border-right: 1px solid $td-sidebar-border-color;

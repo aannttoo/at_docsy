@@ -4,13 +4,13 @@
         border-radius: .4rem;
     }
 </style>
-<!--<a href="https://airflowsummit.org" target="_blank" class="d-block fixed-top px-3 py-2 bg-success text-center text-bold text-white">Notification and announcement!</a>-->
-<nav class="js-navbar-scroll navbar navbar-expand navbar-dark {{ if $cover}} td-navbar-cover {{ end }}flex-column flex-md-row td-navbar">
+<a href="https://atsign.com" target="_blank" class="bannermessage">Join us for App Demo Days every 2 weeks on Friday morning at 8.30 PT</a>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark {{ if $cover}} td-navbar-cover {{ end }}flex-column flex-md-row td-navbar" style="top: 1.8rem;" >
 
     <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
         <span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span>
     </a>
-    <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+    <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar" >
         <ul class="navbar-nav mt-2 mt-lg-0">
             {{ $p := . }} {{ range .Site.Menus.main }}
             <li class="nav-item mr-3 mb-2 mb-lg-0">

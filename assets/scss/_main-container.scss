@@ -10,7 +10,8 @@
     main {
         > section:first-of-type {
             @include media-breakpoint-up(md) {
-                padding-top: 8rem;
+                // remove 4 rem when you take out the banner - @anthony
+                padding-top: 12rem; 
             }
         }
 

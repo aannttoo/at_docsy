@@ -5,7 +5,7 @@
     border-left: 1px solid $border-color;
     @supports (position: sticky) {
         position: sticky;
-        top: 4rem;
+        top: 8rem; //edited by @anthony for top banner - change back to 4 without top banner
         height: calc(100vh - 10rem);
         overflow-y: auto;
     }

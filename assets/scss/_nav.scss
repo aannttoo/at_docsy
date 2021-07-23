@@ -2,7 +2,6 @@
 // Main navbar
 //
 .td-navbar-cover {
-
     background: #3e3e3e;
     @include media-breakpoint-up(md) {
         background: #3e3e3e;
@@ -14,11 +13,26 @@
     }
 }
 
+.bannermessage
+{
+    position: fixed; 
+    z-index: 5;
+    
+    top: 0; 
+    left: 0; 
+    background: #FFAD00;
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    min-height: 2rem;
+    text-decoration-color: #000000;
+    //d-block fixed-top px-3 py-2 bg-success text-center text-bold text-white
+
+}
+
 .navbar-bg-onscroll {
-
+    
     background:#3e3e3e!important;
-
-
 
     opacity: inherit;
 }
@@ -27,17 +41,18 @@
 
     background:#3e3e3e;
 
-
-
-    min-height: 4rem;
+    // top banner changes min height becomes 4 without banner and 6 for banner
+    top: 2rem;
+    min-height: 6rem;
+   
     margin: 0;
     z-index: 32;
     @include media-breakpoint-up(md) {
         position: fixed;
-        top: 0;
         width: 100%;
     }
     .navbar-brand {
+     
         text-transform: none;
         text-align: middle;
         .nav-link {
@@ -51,6 +66,7 @@
         }
     }
     .nav-link {
+        
         text-transform: none;
         font-weight: $font-weight-normal;
     }
@@ -77,6 +93,7 @@
                 padding-left: 0;
             }
             .navbar-nav {
+                
                 padding-bottom: 2rem;
                 overflow-x: auto;
                 white-space: nowrap;
@@ -90,6 +107,7 @@
 #main_navbar {
     li i {
         padding-right: 0.5em;
+        
         &:before {
             display: inline-block;
             text-align: center;
